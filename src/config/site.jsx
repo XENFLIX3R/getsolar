@@ -60,17 +60,17 @@ export const siteConfig = {
   ],
   reviews: [
     {
-      user: "xlocksz | Verifed Customer",
+      user: "xlocksz | Verifed",
       stars: 5,
       review: "Premium Plan was an excellent offer, it is overpowered i would recommend getting this Premium Plan"
     },
     {
-      user: "cod0000 | Verifed Customer",
+      user: "cod0000 | Verifed",
       stars: 5,
       review: "premium plan is very op. I love its features. I can use anything scripts with this one! I recommend you use solar for powerful control!"
     },
     {
-      user: "LouisFishies | Verifed Customer",
+      user: "LouisFishies | Verifed",
       stars: 4,
       review: "Its good, for my opinion about this is Standard Plan Is Probably one of the best plans in my life for my personal opinion"
     },
