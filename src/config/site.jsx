@@ -70,9 +70,9 @@ export const siteConfig = {
       review: "premium plan is very op. I love its features. I can use anything scripts with this one! I recommend you use solar for powerful control!"
     },
     {
-      user: "NoobSlayer_007",
-      stars: 5,
-      review: "Finally, something that just works! Joined the game and started using it instantly. Highly recommend."
+      user: "LouisFishies | Verifed Customer",
+      stars: 4,
+      review: "Its good, for my opinion about this is Standard Plan Is Probably one of the best plans in my life for my personal opinion"
     },
     {
       user: "SolarFanatic",
