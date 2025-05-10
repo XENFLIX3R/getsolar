@@ -65,9 +65,9 @@ export const siteConfig = {
       review: "Premium Plan was an excellent offer, it is overpowered i would recommend getting this Premium Plan"
     },
     {
-      user: "ScriptMasterX",
-      stars: 4,
-      review: "Really impressed with the FE compatibility. Everyone sees what I do. Premium is worth it for full access."
+      user: "cod0000 | Verifed Customer",
+      stars: 5,
+      review: "premium plan is very op. I love its features. I can use anything scripts with this one! I recommend you use solar for powerful control!"
     },
     {
       user: "NoobSlayer_007",
