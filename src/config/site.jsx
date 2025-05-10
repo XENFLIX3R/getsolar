@@ -24,14 +24,14 @@ export const siteConfig = {
       name: "Standard Plan",
       price: "$10",
       icon: <Zap className="h-8 w-8 mb-2 text-primary" />,
-      features: ["Essential execution access", "Some command restrictions"],
+      features: ["Essential execution access", "Some command restrictions", "Cheap"],
       bgColor: "bg-opacity-20 bg-gray-700",
       purchaseUrl: "https://getsolar.mysellauth.com/product/standard-plan"
     },
     {
       id: "premium",
       name: "Premium Plan",
-      price: "$20",
+      price: "$15",
       icon: <Star className="h-8 w-8 mb-2 text-primary" />, 
       features: ["Full command access", "Unlock the ultimate Solar experience", "Priority support"],
       bgColor: "bg-opacity-20 bg-gray-700", 
@@ -47,7 +47,7 @@ export const siteConfig = {
     },
     {
       question: "What games are supported?",
-      answer: "Solar is designed to be compatible with a growing list of popular games. Please check our community channels or documentation for the most up-to-date list of supported titles."
+      answer: "Solar is designed to be compatible with a partnered games. Please check our community channels or documentation for the most up-to-date list of supported titles."
     },
     {
       question: "Can I get banned for using Solar?",
@@ -60,9 +60,9 @@ export const siteConfig = {
   ],
   reviews: [
     {
-      user: "GamerPro123",
+      user: "xlocksz | Verifed Customer",
       stars: 5,
-      review: "Solar is a game-changer! The server-side execution is flawless and so easy to use. No more risky downloads!"
+      review: "Premium Plan was an excellent offer, it is overpowered i would recommend getting this Premium Plan"
     },
     {
       user: "ScriptMasterX",
