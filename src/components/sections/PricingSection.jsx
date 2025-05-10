@@ -18,7 +18,7 @@ const PricingSection = ({ pricingPlans, onPurchaseClick }) => {
       <h2 className="text-4xl font-bold text-center mb-12 gradient-text">Two Powerful Plans</h2>
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {pricingPlans.map((plan, index) => (
-          <motion.div key={plan.name} variants={fadeIn(0.9 + index * 0.1)} initial="hidden" animate="visible">
+          <motion.div key={plan.id} variants={fadeIn(0.9 + index * 0.1)} initial="hidden" animate="visible">
             <Card className={`h-full flex flex-col glassmorphic-card card-hover-glow ${plan.bgColor} ${plan.textColor || ''}`}>
               <CardHeader className="items-center text-center">
                 {plan.icon}
