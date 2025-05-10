@@ -7,15 +7,17 @@ import {
   DialogTitle,
   DialogDescription,
   DialogFooter,
+  DialogClose,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, ShoppingCart, AlertTriangle } from "lucide-react";
+import { siteConfig } from '@/config/site';
 
 const PurchaseDialog = ({ isOpen, onOpenChange, plan }) => {
   if (!plan) return null;
 
   const handleDiscordClick = () => {
-    window.open('https://discord.gg/5zDeE6GKD8', '_blank');
+    window.open(siteConfig.discordLink, '_blank');
   };
 
   const handlePurchaseClick = () => {
@@ -25,37 +27,37 @@ const PurchaseDialog = ({ isOpen, onOpenChange, plan }) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-lg glassmorphic-card text-foreground p-8">
-        <DialogHeader className="text-center">
-          <DialogTitle className="flex items-center justify-center text-xl sm:text-2xl">
-            <AlertTriangle className="h-7 w-7 mr-3 text-primary" />
+      <DialogContent className="sm:max-w-md glassmorphic-card text-foreground">
+        <DialogHeader>
+          <DialogTitle className="flex items-center">
+            <AlertTriangle className="h-6 w-6 mr-2 text-primary" />
             Purchase Information: {plan.name}
           </DialogTitle>
-          <DialogDescription className="pt-3 text-base text-muted-foreground">
+          <DialogDescription className="pt-2 text-muted-foreground">
             Before purchasing, please ensure keys are in stock. For Robux or gift card payments, please join our Discord server.
           </DialogDescription>
         </DialogHeader>
         
-        <div className="my-6 border-t border-border/20"></div>
+        <div className="my-4 border-t border-border/20"></div>
 
-        <p className="text-base text-muted-foreground text-center">
+        <p className="text-sm text-muted-foreground">
           You are about to purchase the <strong>{plan.name}</strong> for <strong>{plan.price}</strong>.
         </p>
         
-        <DialogFooter className="mt-8 flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-4 w-full">
-          <Button 
-            variant="outline" 
-            onClick={handleDiscordClick} 
-            className="border-primary text-primary hover:bg-primary/10 w-full sm:w-auto px-6 py-3 text-base"
-          >
-            <ExternalLink className="mr-2 h-5 w-5" /> Join Discord
+        <DialogFooter className="mt-6 sm:justify-between">
+          <Button variant="outline" onClick={handleDiscordClick} className="border-primary text-primary hover:bg-primary/10">
+            <ExternalLink className="mr-2 h-4 w-4" /> Join Discord
           </Button>
-          <Button 
-            onClick={handlePurchaseClick} 
-            className="solar-gradient-bg text-primary-foreground hover:opacity-90 w-full sm:w-auto px-6 py-3 text-base"
-          >
-            <ShoppingCart className="mr-2 h-5 w-5" /> Proceed to Purchase
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-2 mt-2 sm:mt-0">
+            <DialogClose asChild>
+              <Button type="button" variant="ghost">
+                Cancel
+              </Button>
+            </DialogClose>
+            <Button onClick={handlePurchaseClick} className="solar-gradient-bg text-primary-foreground hover:opacity-90">
+              <ShoppingCart className="mr-2 h-4 w-4" /> Proceed to Purchase
+            </Button>
+          </div>
         </DialogFooter>
       </DialogContent>
     </Dialog>
