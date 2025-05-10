@@ -6,14 +6,15 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import AnimatedBlobs from '@/components/layout/AnimatedBlobs';
 import HeroSection from '@/components/sections/HeroSection';
+import ReviewsSection from '@/components/sections/ReviewsSection';
 import WhatIsSolarSection from '@/components/sections/WhatIsSolarSection';
 import FaqSection from '@/components/sections/FaqSection';
 import FeaturesSection from '@/components/sections/FeaturesSection';
 import PricingSection from '@/components/sections/PricingSection';
 import GetStartedSection from '@/components/sections/GetStartedSection';
 import PurchaseDialog from '@/components/PurchaseDialog';
-import { featureItems, pricingPlansData, faqItemsData } from '@/lib/data';
 
+import { siteConfig } from '@/config/site';
 
 function App() {
   const [isPurchaseDialogOpen, setIsPurchaseDialogOpen] = React.useState(false);
@@ -36,14 +37,15 @@ function App() {
     <div className="min-h-screen dark-gradient-bg text-foreground relative overflow-hidden">
       <div className="grid-background"></div>
       <AnimatedBlobs />
-      <Header />
+      <Header navItems={siteConfig.navItems} />
 
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative z-10">
         <HeroSection scrollToPricing={scrollToPricing} scrollToWhatIsSolar={scrollToWhatIsSolar} />
+        <ReviewsSection reviews={siteConfig.reviews} />
         <WhatIsSolarSection />
-        <FaqSection faqItems={faqItemsData} />
-        <FeaturesSection featureItems={featureItems} />
-        <PricingSection pricingPlans={pricingPlansData} onPurchaseClick={openPurchaseDialog} />
+        <FaqSection faqItems={siteConfig.faqItems} />
+        <FeaturesSection featureItems={siteConfig.featureItems} />
+        <PricingSection pricingPlans={siteConfig.pricingPlans} onPurchaseClick={openPurchaseDialog} />
         <GetStartedSection />
       </main>
 
