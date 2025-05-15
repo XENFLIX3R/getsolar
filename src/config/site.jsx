@@ -14,7 +14,7 @@ export const siteConfig = {
   ],
   discordLink: "https://discord.gg/5zDeE6GKD8",
   featureItems: [
-    { icon: <Sun className="h-5 w-5 text-primary" />, text: "Frozen is embedded directly within the game. No external files, no complex setup." },
+    { icon: <Sun className="h-5 w-5 text-primary" />, text: "Zero Download Needed – Frozen is embedded directly within the game. No external files, no complex setup." },
     { icon: <Server className="h-5 w-5 text-primary" />, text: "True Server-Side Impact – Every action is processed and visible server-wide, ensuring everyone sees your script's power." },
     { icon: <Rocket className="h-5 w-5 text-primary" />, text: "Script Freedom – Run your personal scripts or leverage our premium, ever-growing library of commands." },
   ],
