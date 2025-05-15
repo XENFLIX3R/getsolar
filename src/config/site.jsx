@@ -14,9 +14,9 @@ export const siteConfig = {
   ],
   discordLink: "https://discord.gg/5zDeE6GKD8",
   featureItems: [
-    { icon: <Sun className="h-5 w-5 text-primary" />, text: "No Download Required – Solar is built directly into the game." },
-    { icon: <Server className="h-5 w-5 text-primary" />, text: "Full FE/Server-side Support – Everything you execute is visible to all players." },
-    { icon: <Rocket className="h-5 w-5 text-primary" />, text: "Script Freedom – Use your own scripts or our exclusive selection." },
+    { icon: <Sun className="h-5 w-5 text-primary" />, text: "Frozen is embedded directly within the game. No external files, no complex setup." },
+    { icon: <Server className="h-5 w-5 text-primary" />, text: "True Server-Side Impact – Every action is processed and visible server-wide, ensuring everyone sees your script's power." },
+    { icon: <Rocket className="h-5 w-5 text-primary" />, text: "Script Freedom – Run your personal scripts or leverage our premium, ever-growing library of commands." },
   ],
   pricingPlans: [
     {
